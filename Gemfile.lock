@@ -176,6 +176,7 @@ PLATFORMS
 DEPENDENCIES
   capybara (~> 2.2.1)
   coffee-rails (~> 4.0.0)
+  execjs
   guard-livereload (= 1.1.3)
   guard-rspec
   jbuilder (~> 1.2)
