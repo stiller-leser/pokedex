@@ -1,0 +1,33 @@
+<h1>Listing pokedex_lists</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Index</th>
+      <th>Weight</th>
+      <th>Height</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pokedex_lists.each do |pokedex_list| %>
+      <tr>
+        <td><%= pokedex_list.name %></td>
+        <td><%= pokedex_list.index %></td>
+        <td><%= pokedex_list.weight %></td>
+        <td><%= pokedex_list.height %></td>
+        <td><%= link_to 'Show', pokedex_list %></td>
+        <td><%= link_to 'Edit', edit_pokedex_list_path(pokedex_list) %></td>
+        <td><%= link_to 'Destroy', pokedex_list, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pokedex list', new_pokedex_list_path %>

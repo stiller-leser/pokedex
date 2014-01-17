@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @pokedex_list.name %>
+</p>
+
+<p>
+  <strong>Index:</strong>
+  <%= @pokedex_list.index %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @pokedex_list.weight %>
+</p>
+
+<p>
+  <strong>Height:</strong>
+  <%= @pokedex_list.height %>
+</p>
+
+<%= link_to 'Edit', edit_pokedex_list_path(@pokedex_list) %> |
+<%= link_to 'Back', pokedex_lists_path %>
