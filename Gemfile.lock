@@ -51,6 +51,11 @@ GEM
     erubis (2.7.0)
     eventmachine (1.0.3)
     execjs (2.0.2)
+    factory_girl (4.3.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.3.0)
+      factory_girl (~> 4.3.0)
+      railties (>= 3.0.0)
     ffi (1.9.3)
     formatador (0.2.4)
     guard (2.2.5)
@@ -91,6 +96,7 @@ GEM
     multi_json (1.8.4)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
+    orderly (0.0.2)
     polyglot (0.3.3)
     pry (0.9.12.4)
       coderay (~> 1.0)
@@ -177,10 +183,12 @@ DEPENDENCIES
   capybara (~> 2.2.1)
   coffee-rails (~> 4.0.0)
   execjs
+  factory_girl_rails
   guard-livereload (= 1.1.3)
   guard-rspec
   jbuilder (~> 1.2)
   jquery-rails
+  orderly
   rails (= 4.0.0)
   rspec-rails (~> 2.0)
   sass-rails (~> 4.0.0)
