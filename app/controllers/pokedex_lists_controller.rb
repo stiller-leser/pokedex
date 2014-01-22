@@ -17,6 +17,11 @@ class PokedexListsController < ApplicationController
     @pokedex_list = PokedexList.new
   end
 
+  # GET /pokedex_lists/sort
+  def sort
+    @pokedex_lists = PokedexList.order(index: :desc)
+  end
+
   # GET /pokedex_lists/1/edit
   def edit
   end
