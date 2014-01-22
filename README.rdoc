@@ -1,3 +1,3 @@
 == README
 
-Travis link: https://travis-ci.org/stiller-leser/pokedex/builds/17403509
+Travis link: https://travis-ci.org/stiller-leser/pokedex/builds/
