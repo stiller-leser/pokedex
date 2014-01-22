@@ -11,6 +11,7 @@ Pokedex::Application.routes.draw do
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
       get 'sort' => 'pokedex_lists#sort'
+      get 'count' => 'pokedex_lists#count'
 
 
   # Example resource route (maps HTTP verbs to controller actions automatically):

@@ -22,6 +22,10 @@ class PokedexListsController < ApplicationController
     @pokedex_lists = PokedexList.order(name: :desc)
   end
 
+  def count
+    @pokedex_lists = PokedexList.count
+  end
+
   # GET /pokedex_lists/1/edit
   def edit
   end
