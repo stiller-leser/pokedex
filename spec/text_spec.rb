@@ -22,7 +22,12 @@ describe "PokedexLists" do
         'Pokemon No 4'.should appear_before('Pokemon No 3')
         'Pokemon No 3'.should appear_before('Pokemon No 2')
         'Pokemon No 2'.should appear_before('Pokemon No 1')
+    end
 
+    it "count the correct number of pokemon in the index" do
+      visit count_path
+      
+      '5'.should appear_before('AWESOME')
     end
   end
 end
