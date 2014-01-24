@@ -13,7 +13,7 @@ describe "PokedexLists" do
       end
     end
     it "shows the pokemons in the correct descending order" do
-        visit sort_path
+        visit sort_path(sort: 'desc')
         #save_and_open_page
 
         # how to check for order...
@@ -25,7 +25,7 @@ describe "PokedexLists" do
     end
 
     it "shows the pokemons in the correct ascending order" do
-        visit sort_path
+        visit sort_path(sort: 'asc')
         'Pokemon No 1'.should appear_before('Pokemon No 2')
         'Pokemon No 2'.should appear_before('Pokemon No 3')
         'Pokemon No 3'.should appear_before('Pokemon No 4')
