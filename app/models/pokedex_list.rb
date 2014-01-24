@@ -1,3 +1,3 @@
 class PokedexList < ActiveRecord::Base
-	has_many :types
+	belongs_to :types
 end

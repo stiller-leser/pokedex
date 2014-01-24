@@ -10,6 +10,7 @@ class TypesController < ApplicationController
   # GET /types/1
   # GET /types/1.json
   def show
+    @pokedex_lists = @type.pokedex_list
   end
 
   # GET /types/new
