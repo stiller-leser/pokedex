@@ -31,5 +31,6 @@
 <br>
 
 <%= link_to 'New Pokedex list', new_pokedex_list_path %><br />
-<%= link_to 'Order this list descending', sort_path %><br />
+<%= link_to 'Order this list descending', sort_path(sort: 'desc') %><br />
+<%= link_to 'Order this list ascending', sort_path(sort: 'asc') %><br />
 <%= link_to 'Count my awesome pokemons!', count_path %>

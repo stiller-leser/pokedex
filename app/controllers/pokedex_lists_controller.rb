@@ -19,7 +19,11 @@ class PokedexListsController < ApplicationController
 
   # GET /pokedex_lists/sort
   def sort
-    @pokedex_lists = PokedexList.order(name: :desc)
+    if params[:sort] == 'desc'
+      @pokedex_lists = PokedexList.order(name: :desc)
+    elseif params[:sort] == 'asc'
+      @pokedex_lists = PokedexList.order(name: :asc)
+    end
   end
 
   def count
