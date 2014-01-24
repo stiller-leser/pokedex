@@ -21,7 +21,7 @@ class PokedexListsController < ApplicationController
   def sort
     if params[:sort] == 'desc'
       @pokedex_lists = PokedexList.order(name: :desc)
-    elseif params[:sort] == 'asc'
+    elsif params[:sort] == 'asc'
       @pokedex_lists = PokedexList.order(name: :asc)
     end
   end
