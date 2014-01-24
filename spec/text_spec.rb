@@ -35,7 +35,7 @@ describe "PokedexLists" do
     it "count the correct number of pokemon in the index" do
       visit count_path
       
-      '5'.should appear_before('AWESOME')
+      '5'.should appear_before I18n.t('count.b')
     end
   end
 end
