@@ -1,5 +1,5 @@
-<center>You have<br />
+<center><%= t('count.a') %><br />
 <h1><%= @pokedex_lists %></h1><br />
-<b>AWESOME</b> Pokémons!</br>
+<b><%= t('count.b') %></b> <%= t('count.c') %></br>
 </center>
-<%= link_to 'Back to index', pokedex_lists_path %>
+<%= link_to t('nav.back'), pokedex_lists_path %>
